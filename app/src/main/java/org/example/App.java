@@ -4,11 +4,10 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        BMI bmiCalculator = new BMI();
+        double burakBmi = bmiCalculator.calculateBMI(1.75, 73);
+        System.out.println(burakBmi);
     }
 }
